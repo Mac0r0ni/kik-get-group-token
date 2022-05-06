@@ -16,7 +16,7 @@ class RegisterClient(KikClientCallback):
  
     def on_authenticated(self):
         print("You are now logged in")
-        id = client.search_group("activeandautistic")
+        id = client.search_group("#activeandautistic") #Put the group you want to the token for here
         
     def on_group_search_response(self, response: GroupSearchResponse):
         print(response.groups)
